@@ -8,7 +8,7 @@ import { api, setAuthToken, clearAuthToken } from './utils/api';
 function Navbar({ isAuthenticated, onLogout }) {
   return (
     <nav className="navbar">
-      <Link className="navbar-brand" to="/">TaskFlow</Link>
+      <Link className="navbar-brand" to="/">Task Manager</Link>
       <div className="navbar-links">
         {isAuthenticated ? (
           <button className="btn" onClick={onLogout}>Logout</button>
@@ -67,8 +67,8 @@ function Login({ onAuth }) {
         <button type="submit" className="btn btn-large">Login</button>
         {err && <div className="error">{err}</div>}
       </form>
-      <div className="auth-switch">
-        Don't have an account? <Link to="/register">Register</Link>
+      <div className="auth-switch" style={{ color: '#424242', textAlign: 'center' }}>
+        Register here
       </div>
     </div>
   );

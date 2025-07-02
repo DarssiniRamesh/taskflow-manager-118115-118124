@@ -1,4 +1,4 @@
-const API_BASE = "https://vscode-internal-198-beta.beta01.cloud.kavia.ai:3001";
+const API_BASE = "https://vscode-internal-035-beta.beta01.cloud.kavia.ai:3001";
 
 let defaultHeaders = {};
 
